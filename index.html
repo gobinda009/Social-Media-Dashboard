@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- Main Stylesheet Source -->
+  <link rel=" stylesheet" href="style.css">
+
+  <!-- Inter Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+  <title>Social Media Dashboard</title>
+
+</head>
+
+<body class="dark">
+  <!-- Main Container -->
+  <div class="contianer">
+    <!-- Header Area -->
+    <div class="header">
+      <div class="header-left">
+        <h1 class="header-heading">Social Media Dashboard</h1>
+      </div>
+      <div class="header-right">
+        <div class="dark-mode-title">
+          <p>Dark Mode</p>
+        </div>
+        <div class="dark-mode-toggle">
+          <label class="switch">
+            <input id="toggleSwitch" type="checkbox" class="toggle-switch">
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <!-- Total Summary Area -->
+    <div class="summary">
+      <div class="cards">
+        <div class="card">
+          <div class="usern-info">
+            <a href="https://www.facebook.com/gfactsglobe" target="_blank"><img src="./images/icon-facebook.svg" alt="facebook"></a>
+            <span class="username">@Gfacts</span>
+          </div>
+          <div class="followers">
+            <div id="cocktail"></div>
+            <span>FOLLOWERS</span>
+          </div>
+          <span class="todays-stats">
+            <div id="todaylike"></div><span>Today</span>
+          </span>
+        </div>
+        <div class="card">
+          <div class="usern-info">
+            <img src="./images/icon-twitter.svg" alt="twitter">
+            <span class="username">@gobinda</span>
+          </div>
+          <div class="followers">
+            
+            <span>FOLLOWERS</span>
+          </div>
+          <span class="todays-stats"></span>
+        </div>
+        <div class="card">
+          <div class="usern-info">
+            <a href="https://www.instagram.com/gfactsglobe/" target="_blank"><img src="./images/icon-instagram.svg" alt="instagram"></a>
+            <span class="username">@gfacts</span>
+          </div>
+          <div class="followers">
+            <div id="totalFollowers"></div>
+            <span>FOLLOWERS</span>
+          </div>
+          <span class="todays-stats">
+            <div id="todayFollower"></div><span>Today</span>
+          </span>
+        </div>
+        <div class="card">
+          <div class="usern-info">
+            <a href="https://www.youtube.com/channel/UCU5_9CZHpxhJh2ipfVqbRYA" target="_blank"><img src="./images/icon-youtube.svg" alt="youtube"></a>
+            <span class="username">Skyline_Automated</span>
+          </div>
+          <div class="followers">
+            <div id="subscriber_count"></div>
+            <span>SUBSCRIBERS</span>
+          </div>
+          <span class="todays-stats-down">
+            <div id="todaysSubscibers"></div>
+          </span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Overview Area -->
+    <div class="overview">
+      <h2>Overview - Today</h2>
+      <div class="cards">
+        <div class="card-overview">
+          <div class="card-items">
+            <div class="card-top">
+              <p class="card-title">Page Views</p>
+              <img class="social-icons" src="./images/icon-facebook.svg" alt="facebook">
+            </div>
+            <div class="card-bottom">
+              <div id="view"></div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="card-overview">
+
+          <div class="card-items">
+            <div class="card-top">
+              <p class="card-title">Likes</p>
+              <img class="social-icons" src="./images/icon-facebook.svg" alt="facebook">
+            </div>
+            <div class="card-bottom">
+              <div id="todaylike1"></div>
+            </div>
+          </div>
+        </div>
+        <div class="card-overview">
+          <div class="card-items">
+            <div class="card-top">
+              <p class="card-title">Followers</p>
+              <img class="social-icons" src="./images/icon-instagram.svg" alt="instagram">
+            </div>
+            <div class="card-bottom">
+              <div id="todaysCount"></div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="card-overview">
+          <div class="card-items">
+            <div class="card-top">
+              <p class="card-title">Profile Views</p>
+              <img class="social-icons" src="./images/icon-instagram.svg" alt="instagram">
+            </div>
+            <div class="card-bottom">
+              <div id="pageViewDay"></div>
+            </div>
+          </div>
+        </div>
+        <div class="card-overview">
+          <div class="card-items">
+            <div class="card-top">
+              <p class="card-title">Retweets</p>
+              <img class="social-icons" src="./images/icon-twitter.svg" alt="twitter">
+            </div>
+            <div class="card-bottom">
+              
+              
+            </div>
+          </div>
+        </div>
+        <div class="card-overview">
+          <div class="card-items">
+            <div class="card-top">
+              <p class="card-title">Likes</p>
+              <img class="social-icons" src="./images/icon-twitter.svg" alt="twitter">
+            </div>
+            <div class="card-bottom">
+              
+              <div class="rate">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-overview">
+          <div class="card-items">
+            <div class="card-top">
+              <p class="card-title">Total Videos</p>
+              <img class="social-icons" src="./images/icon-youtube.svg" alt="youtube">
+            </div>
+            <div class="card-bottom">
+              <div id="youtubeVideos"></div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="card-overview">
+          <div class="card-items">
+            <div class="card-top">
+              <p class="card-title">Total Views</p>
+              <img class="social-icons" src="./images/icon-youtube.svg" alt="youtube">
+            </div>
+            <div class="card-bottom">
+              <div id="totalViews"></div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Main JavaScript Source -->
+  <script src="main.js"></script>
+</body>
+
+</html>
